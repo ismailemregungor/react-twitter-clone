@@ -12,6 +12,7 @@ import {
   ProfileIcon,
 } from '../assets/icons/Icon';
 import SideLink from '../components/SideLink';
+import UserBox from '../components/UserBox';
 
 const sideLinks = [
   {
@@ -78,7 +79,9 @@ const Sidebar = () => {
           Tweet
         </button>
       </div>
-      <div>ProfileMenu</div>
+      <div>
+        <UserBox />
+      </div>
     </div>
   );
 };
