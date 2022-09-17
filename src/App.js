@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from './layout/Container';
 import Sidebar from './layout/Sidebar';
-import Timeline from './layout/Timeline';
+import Content from './layout/Content';
 import Widgets from './layout/Widgets';
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <Container>
         <Sidebar />
+        <Content />
         <Widgets />
-        <Timeline />
       </Container>
     </div>
   );
