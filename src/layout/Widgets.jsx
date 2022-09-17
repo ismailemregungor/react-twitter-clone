@@ -1,35 +1,19 @@
 import React from 'react';
-import {
-  EmojiIcon,
-  GIFIcon,
-  ImageIcon,
-  LikeIcon,
-  LocationIcon,
-  PollIcon,
-  PopulerIcon,
-  ReplyIcon,
-  RetweetIcon,
-  ScheduleIcon,
-  ShareIcon,
-} from '../assets/icons/Icon';
+import { SearchIcon } from '../assets/icons/Icon';
 
-const Widgets = () => {
+const Timeline = () => {
   return (
-    <div className="flex-1 min-h-screen border">
-      <h1>Main</h1>
-      <PopulerIcon />
-      <ImageIcon />
-      <GIFIcon />
-      <PollIcon />
-      <EmojiIcon />
-      <ScheduleIcon />
-      <LocationIcon />
-      <ReplyIcon />
-      <RetweetIcon />
-      <LikeIcon />
-      <ShareIcon />
+    <div className="w-80 min-h-screen border">
+      <div className="flex items-center space-x-4 p-3 m-3 bg-gray-200 rounded-full text-gray-dark focus-within:bg-white focus-within:ring-1 focus-within:ring-primary-base focus-within:text-primary-base">
+        <SearchIcon className="" />
+        <input
+          placeholder="Search Twitter"
+          className="placeholder-gray-dark bg-transparent outline-none w-full text-sm"
+        />
+      </div>
+      <div>Timeline</div>
     </div>
   );
 };
 
-export default Widgets;
+export default Timeline;
