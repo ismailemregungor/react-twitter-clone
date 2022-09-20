@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Sidelink = ({ name, Icon, active, onMenuItemClick }) => {
   const isActive = active === name;
