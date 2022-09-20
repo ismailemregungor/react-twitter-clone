@@ -57,7 +57,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between w-72 min-h-screen border px-2">
+    <div className="h-screen sticky top-0 flex flex-col justify-between w-72 min-h-screen px-2">
       <div>
         <div className="mt-1 mb-4 ml-1 flex items-center justify-center w-12 h-12 rounded-full hover:bg-gray-lightest transform transition-colors duration-200">
           <Logo />
